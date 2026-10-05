@@ -1,6 +1,6 @@
 # Reina Chen — Portfolio
 
-A personal portfolio built with React, Vite, and Three.js.
+A personal portfolio built with React and Vite. Created the 3D island model with Tripo3D and used Three.js to build the interactive rotation and zoom.
 
 ## Run locally
 
