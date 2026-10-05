@@ -1,0 +1,55 @@
+/* Current typography retained over the saved original interface. */
+:root{--serif:Literata,Georgia,serif}
+#root .brand-mark{font-size:23px}
+#root .topbar nav a{font-size:14px}
+#root .intro h1{font-size:clamp(54px,5.6vw,80px);line-height:1.1;letter-spacing:-.04em}
+#root .intro h1 em{font-style:italic}
+#root .lede{font-size:19px;line-height:1.65}
+#root .intro-location{font-size:10px}
+#root .path-link{font-size:15px}
+#root .drag-hint{font-size:11px}
+#root .label-copy strong{font-size:10px}
+#root .label-copy small{font-size:11px}
+#root .about-copy h2,#root .section-heading h2{font-size:clamp(42px,4.5vw,64px);line-height:1.12;letter-spacing:-.035em;text-transform:none}
+#root .about-copy>p{font-size:20px}
+#root .section-index{font-size:10px;letter-spacing:.16em}
+#root .about-portrait figcaption{font-size:10px}
+#root .interest-copy strong{font-size:25px}
+#root .interest-copy span{font-size:15px}
+#root .experience-section .section-heading h2{text-transform:none;font-size:64px}
+#root .experience-section .timeline-date{font-size:11px;line-height:1.6;letter-spacing:.06em}
+#root .experience-section .timeline-entry h3{font-size:28px;line-height:1.25}
+#root .experience-section .timeline-org{font-size:17px}
+#root .timeline-bullets li{font-size:15px;line-height:1.65}
+#root .experience-section .resume-link{font-size:16px}
+#root .section-heading>p{font-size:15px}
+#root .filter-button{font-size:13px}
+#root .project-entry h3{font-size:32px;line-height:1.2}
+#root .project-meta{font-size:11px}
+#root .project-entry p{font-size:16px;line-height:1.65}
+#root .project-stack-label{font-size:9px}
+#root .project-stack li{font-size:12px}
+#root .project-links a{font-size:13px}
+#root .skill-group h3{font-family:var(--serif);font-size:22px;letter-spacing:0;text-transform:none}
+#root .skill-group li{font-size:15px}
+#root .contact-section h2{font-size:clamp(40px,4.8vw,65px);text-transform:none;line-height:1.12}
+#root .contact-form label{font-size:14px}
+#root footer{font-size:10px}
+@media(max-width:980px){#root .intro h1{font-size:55px}
+#root .experience-section .section-heading h2{font-size:46px}}
+@media(max-width:700px){#root .topbar nav a{font-size:13px}
+#root .header-contact{font-size:12px}
+#root .intro h1{font-size:clamp(48px,11vw,68px)}
+#root .lede{font-size:17px}
+#root .about-copy h2{font-size:39px}
+#root .about-copy>p{font-size:16px}
+#root .experience-section .timeline-entry h3{font-size:25px}
+#root .section-heading h2{font-size:40px}
+#root .project-entry h3{font-size:29px}
+#root .skill-group h3{font-size:20px}
+#root .contact-section h2{font-size:43px}}
+/* Fixed header clearance: keep the hero's first line fully visible below navigation. */
+#root .hero{padding-top:clamp(112px,12vh,150px)}
+@media(max-width:700px){#root .hero{padding-top:158px}}
+
+#root .collection-empty{grid-template-columns:minmax(0,1fr)}

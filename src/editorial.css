@@ -1,0 +1,98 @@
+/* Saved-version successor: an illustrated editorial portfolio. */
+:root{--ink:#243f35;--ink-soft:#466052;--muted:#596b60;--leaf:#355b46;--paper:#f7f5ed;--line:#d4d9cb;--gold:#a88145;--serif:Literata,Georgia,serif;scroll-padding-top:110px}
+#root .sky-shell{background:var(--paper)}
+#root h1,#root h2,#root h3,#root .brand-copy,#root .topbar nav a{color:var(--ink)}
+#root h1 em,#root h2 em{color:#55735b}
+#root .topbar{width:min(1180px,calc(100% - 48px));min-height:62px;background:#faf9f0ed;border:1px solid #d1dacb;box-shadow:0 8px 30px #243f3510;padding:10px 20px;border-radius:16px;backdrop-filter:blur(16px)}
+#root .brand-mark{background:var(--ink);color:#fbf5df;width:34px;height:34px;font-size:23px}
+#root .brand-copy small{color:#627260}
+#root .topbar nav a{font-size:14px}
+#root .topbar nav a[aria-current=location]:after{transform:scaleX(1)}
+#root .header-contact{background:var(--ink);border-color:var(--ink);color:#fffdf3;padding:10px 17px}
+#root .hero{width:100%;min-height:830px;padding:120px max(32px,calc((100vw - 1280px)/2)) 70px;grid-template-columns:.85fr 1.15fr;background:#d8e9e7 url('/images/atmosphere/cloud-field.jpg') center bottom/cover no-repeat;gap:16px}
+#root .hero:after{height:200px;background:linear-gradient(transparent,var(--paper))}
+#root .intro{max-width:540px;padding:0 0 30px}
+#root .intro h1{font-size:clamp(54px,5.6vw,80px);line-height:1.1;letter-spacing:-.04em}
+#root .intro h1 em{font-style:italic}
+#root .lede{font-size:19px;line-height:1.65;max-width:36ch;color:#354e43;margin:28px 0}
+#root .intro-location{color:#526b58;margin-top:23px;font-size:10px}
+#root .path-link{font-size:15px;color:var(--ink);border-color:#7c927d;padding:12px 0}
+#root .drag-hint{font-size:11px;color:#536c58;margin-top:36px}
+#root .island-wrap{height:660px;min-height:0;width:110%;margin:0 0 0 -5%;transform:none}
+#root .island-art{transform:translateY(12px)}
+#root .scene-label{min-width:150px;padding:9px 13px;gap:9px;background:#fcfaf0eb;border:0;box-shadow:0 10px 25px #243f3510}
+#root .label-copy strong{font-size:10px;color:var(--ink)}
+#root .label-copy small{color:#546a58;font-size:11px}
+#root .label-projects{left:0;top:22%}#root .label-experience{right:0;top:6%}#root .label-skills{right:0;bottom:16%}#root .label-contact{left:0;bottom:12%}
+#root .section-frame{width:min(1200px,calc(100% - 80px))}
+#root .about-section{display:grid;grid-template-columns:1fr 200px;gap:48px 100px;margin:auto;padding:100px 0 110px;background:none}
+#root .about-section:before{display:none}
+#root .about-copy h2,#root .section-heading h2{font-size:clamp(42px,4.5vw,64px);line-height:1.12;letter-spacing:-.035em;text-transform:none;white-space:normal}
+#root .about-copy>p{font-size:20px;max-width:38ch;color:#536354}
+#root .section-index{font-size:10px;letter-spacing:.16em;color:#617359;margin:0 0 18px}
+#root .about-portrait img{border:0;border-radius:100px 100px 4px 4px;box-shadow:none}
+#root .about-portrait figcaption{color:#465b48;font-size:10px}
+#root .interest-strip{gap:30px;margin-top:16px}
+#root .interest-card{height:auto;min-height:0;overflow:visible;border:0!important;background:none;box-shadow:none;border-radius:0}
+#root .interest-card:after{display:none}
+#root .interest-card>div.interest-gallery{position:relative;inset:auto;height:300px;overflow-x:auto;gap:0;padding:0;border-radius:8px;background:#e8e8df;scrollbar-width:none}
+#root .interest-gallery img{height:100%;min-width:100%;object-fit:contain;transform:none}
+#root .interest-copy{position:relative;inset:auto;padding:18px 0 0}
+#root .interest-copy strong{color:var(--ink);font-size:25px}
+#root .interest-copy span{color:#596b60;font-size:15px;margin-top:7px}
+#root .interest-scroll-control{top:150px;width:32px;height:32px;box-shadow:none;color:var(--ink)}
+#root .experience-section.section-frame{display:grid;grid-template-columns:.7fr 1.3fr;gap:36px 80px;width:min(1200px,calc(100% - 80px));padding:100px 0;margin:auto;background:none;border-top:1px solid var(--line)}
+#root .experience-section:before,#root .experience-section:after,#root .experience-heading-leaf{display:none}
+#root .experience-section .section-heading{grid-column:1;align-self:start;position:sticky;top:115px;text-align:left;margin:0}
+#root .experience-section .section-heading h2{text-transform:none;font-size:64px}
+#root .experience-section .timeline{grid-column:2;grid-row:1 / span 2;display:block;width:100%;margin:0;padding:0 0 0 24px;border-left:1px solid #c9d3c3}
+#root .experience-section .timeline:before{display:none}
+#root .experience-section .timeline-item{padding:0 0 32px;margin:0 0 30px;text-align:left;border-bottom:1px solid var(--line)}
+#root .experience-section .timeline-entry{padding:0;height:auto;background:none;box-shadow:none;border:0;border-radius:0}
+#root .experience-section .timeline-node{left:-29px;right:auto;top:5px;width:9px;height:9px;border:0;box-shadow:none;background:#8b9e7a}
+#root .timeline-node span{display:none}
+#root .experience-section .timeline-date{color:#657357;font-size:11px;line-height:1.6;letter-spacing:.06em;margin-bottom:13px}
+#root .experience-section .timeline-entry h3{font-size:28px;line-height:1.25;margin:0 0 8px}
+#root .experience-section .timeline-org{margin:0;color:#57704f;font-size:17px}
+#root .timeline-bullets li{color:#465b4f;font-size:15px;line-height:1.65}
+#root .experience-section .resume-link{grid-column:1;grid-row:2;align-self:start;justify-self:start;margin:0;color:var(--ink);font-size:16px}
+#root .projects-section{padding:100px 0;border-top:1px solid var(--line)}
+#root .projects-section .section-heading{margin-bottom:38px}
+#root .projects-section .section-heading h2{max-width:760px}
+#root .section-heading>p{color:#62715e;font-size:15px}
+#root .filter-bar{gap:10px;padding-bottom:32px}
+#root .filter-button{font-size:13px;min-height:40px;padding:0 18px;border-color:#cbd4c4;color:#4c6353}
+#root .filter-button.is-selected{background:var(--ink);border-color:var(--ink);color:#fff}
+#root .project-grid{gap:64px 42px;border:0}
+#root .project-entry{padding:0;border:0!important}
+#root .project-entry:after{display:none}
+#root .project-image{height:360px;background:#eeeee7;border:0;border-radius:8px;box-shadow:none;overflow:hidden}
+#root .project-image img{object-fit:contain;transform:none}
+#root .project-image-cat-post{background:#1e2024}
+#root .project-entry h3{font-size:32px;margin:14px 0 12px;line-height:1.2}
+#root .project-meta{margin-top:20px;color:#4f694f;font-size:11px}
+#root .project-meta span+span{color:#64715e}
+#root .project-entry p{font-size:16px;line-height:1.65;color:#526352;margin:0;max-width:60ch}
+#root .project-stack-label{color:#718064;font-size:9px}
+#root .project-stack li{border:0;background:#e9edde;color:#52624a;border-radius:4px;font-size:12px;padding:5px 8px}
+#root .project-links{gap:22px;flex-wrap:wrap;margin-top:20px}
+#root .project-links a{font-size:13px;color:#2d513e}
+#root .skills-section{padding:90px 0 110px;border-color:var(--line)}
+#root .skill-groups{grid-template-columns:repeat(3,1fr);gap:0 36px}
+#root .skill-group{padding:24px 0!important;min-height:0;transform:none;border:0;border-top:1px solid var(--line);background:none;box-shadow:none;border-radius:0;backdrop-filter:none}
+#root .skill-group h3{font-family:var(--serif);font-size:22px;color:var(--ink);letter-spacing:0;text-transform:none;margin-bottom:15px}
+#root .skill-group ul{display:flex;flex-wrap:wrap;gap:8px 14px}
+#root .skill-group li{font-size:15px;padding:0;border:0;background:none;box-shadow:none;color:#526352;backdrop-filter:none}
+#root .contact-section{width:100%;padding:100px max(40px,calc((100vw - 1200px)/2));gap:70px;background:#e5ebdf;border:0;grid-template-columns:1fr 1fr}
+#root .contact-section h2{font-size:clamp(40px,4.8vw,65px);text-transform:none;line-height:1.12}
+#root .contact-section:before{background:linear-gradient(90deg,#e5ebdff5,#e5ebdfb8)}
+#root .contact-visual img{opacity:.4;mask-image:none}
+#root .contact-copy>p,#root .contact-links a{color:#3e5845}
+#root .contact-form{background:#fafbf4e8;border:0;border-radius:8px;box-shadow:none;padding:32px}
+#root .contact-form h3{color:var(--ink)}
+#root .contact-form label{color:#425b46;font-size:14px}
+#root .contact-form input,#root .contact-form textarea{border-radius:4px;border-color:#cad3c0;color:var(--ink);background:#fffffa}
+#root .contact-form button{background:var(--ink);padding:13px 22px}
+#root footer{color:#60745d;font-size:10px;min-height:85px}
+@media(max-width:980px){#root .hero{padding-top:160px;min-height:740px}#root .intro h1{font-size:55px}#root .island-wrap{height:500px}#root .scene-label{min-width:0}#root .label-copy small{display:none}#root .interest-strip{grid-template-columns:repeat(3,1fr);gap:18px}#root .interest-card>div.interest-gallery{height:230px}#root .interest-scroll-control{top:115px}#root .experience-section.section-frame{gap:32px}#root .experience-section .section-heading h2{font-size:46px}#root .project-image{height:290px}}
+@media(max-width:700px){:root{scroll-padding-top:140px}#root .topbar{width:calc(100% - 24px);padding:10px 14px;gap:8px;border-radius:12px}#root .topbar nav{justify-content:space-between;padding-top:8px}#root .topbar nav a{font-size:13px}#root .header-contact{font-size:12px}#root .hero{display:flex;padding:164px 24px 50px;gap:0;min-height:0}#root .intro h1{font-size:clamp(48px,11vw,68px)}#root .lede{font-size:17px;max-width:36ch}#root .island-wrap{width:100%;height:430px;margin:0;min-height:0}#root .scene-label{padding:8px;gap:6px}#root .label-icon{width:28px;height:28px}#root .section-frame{width:calc(100% - 40px)}#root .about-section{grid-template-columns:1fr 95px;padding:60px 0;gap:28px 20px}#root .about-copy h2{font-size:39px}#root .about-copy>p{font-size:16px}#root .interest-strip{grid-template-columns:1fr;gap:32px}#root .interest-card>div.interest-gallery{height:300px}#root .interest-scroll-control{top:150px}#root .experience-section.section-frame{width:calc(100% - 40px);display:block;padding:60px 0}#root .experience-section .section-heading{position:static;margin-bottom:35px}#root .experience-section .timeline{padding-left:20px}#root .experience-section .timeline-node{left:-25px}#root .experience-section .timeline-entry h3{font-size:25px}#root .experience-section .resume-link{margin:15px 0}#root .projects-section,#root .skills-section{padding:60px 0}#root .section-heading h2{font-size:40px}#root .project-grid{grid-template-columns:1fr;gap:48px}#root .project-image{height:300px}#root .project-entry h3{font-size:29px}#root .skill-groups{grid-template-columns:1fr 1fr;gap:0 22px}#root .skill-group h3{font-size:20px}#root .contact-section{grid-template-columns:1fr;gap:36px;padding:65px 20px}#root .contact-form{padding:24px}#root .contact-section h2{font-size:43px}}
