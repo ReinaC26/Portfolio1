@@ -4,7 +4,11 @@ import './style.css?v=portfolio-comments-13';
 import './typography.css';
 
 
+
+
 const Island = lazy(() => import('./Island.jsx'));
+
+
 
 
 const projectCategories = ['All projects', 'Web development', 'Mobile', 'AI / ML', 'Data', 'UI/UX', 'Vibe Coding'];
@@ -46,8 +50,8 @@ const skillGroups = [
   {category:'Tools',items:['Git/GitHub','Codex','Claude Code','Microsoft 365']},
 ];
 const interests = [
-  {title:'Photography',description:'Capturing moments and telling visual stories through the lens',photos:[{image:'photography/photo-01.jpg',alt:'People resting beneath a tree beside the water'},{image:'photography/photo-02.jpg',alt:'Origami birds displayed in a sunlit window'},{image:'photography/photo-03.jpg',alt:'Brooklyn Bridge and Manhattan skyline at dusk'},{image:'photography/photo-04.jpg',alt:'Fireworks over a fairytale castle at night'},{image:'photography/photo-05.jpg',alt:'Sunlight on a stone wall and quiet street'},{image:'photography/photo-06.jpg',alt:'Rainbow appearing over a tree-lined neighborhood'}]},
-  {title:'Design',description:'Creation guided by my aesthetic perspective',photos:[{image:'design-visualdive.png',alt:'VisualDive mobile app design flow'},{image:'design-floating-island.png',alt:'Floating island portfolio scene'},{image:'design-zipnote.png',alt:'ZipNote interface wireframe'}]},
+  {title:'Photography',description:'Capturing life moments',photos:[{image:'photography/photo-01.jpg',alt:'People resting beneath a tree beside the water'},{image:'photography/photo-02.jpg',alt:'Origami birds displayed in a sunlit window'},{image:'photography/photo-03.jpg',alt:'Brooklyn Bridge and Manhattan skyline at dusk'},{image:'photography/photo-04.jpg',alt:'Fireworks over a fairytale castle at night'},{image:'photography/photo-05.jpg',alt:'Sunlight on a stone wall and quiet street'},{image:'photography/photo-06.jpg',alt:'Rainbow appearing over a tree-lined neighborhood'}]},
+  {title:'Design',description:'Some design drafts',photos:[{image:'design-visualdive.png',alt:'VisualDive mobile app design flow'},{image:'design-floating-island.png',alt:'Floating island portfolio scene'},{image:'design-zipnote.png',alt:'ZipNote interface wireframe'}]},
   {title:'More',description:'More photos of my life',photos:[{image:'more/gym-treadmill.jpg',alt:'Treadmill console at the gym'},{image:'more/mario-kart.jpg',alt:'Mario Kart race results on a screen'},{image:'more/sunlit-cat.jpg',alt:'Cat resting on a sunlit ledge'},{image:'more/ceramic-painting.jpg',alt:'Paintbrushes and ceramic pieces at an art studio'},{image:'more/dinner-table.jpg',alt:'Dinner dishes shared around a restaurant table'},{image:'more/picnic-meal.jpg',alt:'Picnic meal spread on a checkered blanket'}]},
 ];
 const landmarks = [
@@ -73,4 +77,6 @@ function Skills(){return <section className="skills-section section-frame" id="s
 function Contact(){const sendMessage=event=>{event.preventDefault();const data=new FormData(event.currentTarget);const subject=encodeURIComponent(`Portfolio message from ${data.get('name')}`);const body=encodeURIComponent(`From: ${data.get('name')}\nEmail: ${data.get('email')}\n\n${data.get('message')}`);window.location.href=`mailto:chensj0314@gmail.com?subject=${subject}&body=${body}`};return <section className="contact-section section-frame" id="contact" aria-labelledby="contact-title"><div className="contact-visual" aria-hidden="true"><img src="/images/portfolio/contact-bridge.jpg" alt="" loading="lazy"/></div><div className="contact-copy"><span className="section-index">CONTACT</span><h2 id="contact-title">Let's create<br/><em>something meaningful</em></h2><p>Have a role, idea, or question? Let's Chat!</p><div className="contact-links"><a href="mailto:chensj0314@gmail.com">Email</a><a href="https://www.linkedin.com/in/shijie-reina-chen/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/ReinaC26" target="_blank" rel="noreferrer">GitHub</a></div></div><form className="contact-form" onSubmit={sendMessage}><h3>Send a note</h3><div className="contact-fields"><label>Name<input name="name" autoComplete="name" required placeholder="Your name"/></label><label>Email<input name="email" type="email" autoComplete="email" required placeholder="you@example.com"/></label></div><label>Message<textarea name="message" required rows="4" placeholder="What would you like to talk about?"/></label><button type="submit">Let's Chat <Mark name="arrow" size={17}/></button></form></section>}
 function App(){const [showScene,setShowScene]=useState(false),[selectedProject,setSelectedProject]=useState(projectCategories[0]);useEffect(()=>{const id=window.setTimeout(()=>setShowScene(true),120);return()=>window.clearTimeout(id)},[]);return <><a className="skip-link" href="#main-content">Skip to content</a><Header/><div className="sky-shell"><main id="main-content"><Hero showScene={showScene}/><div className="about-divider" aria-hidden="true"/><About/><Experience/><Projects selected={selectedProject} setSelected={setSelectedProject}/><Skills/><Contact/></main><footer><span>© 2026 REINA CHEN</span></footer></div></>}
 createRoot(document.getElementById('root')).render(<App/>);
+
+
 
