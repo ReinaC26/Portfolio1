@@ -467,3 +467,9 @@ footer{color:#725947}
 /* Pin the section navigation above page content while scrolling. */
 .topbar{position:fixed!important;z-index:50;top:10px!important;left:50%!important;margin:0!important;transform:translateX(-50%)!important}
 @media(max-width:700px){.topbar{top:max(8px,env(safe-area-inset-top))!important}}
+
+
+/* Match the resume and repository actions as equally sized buttons. */
+.project-more .quiet-link,.experience-section.section-frame .resume-link{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:44px;padding:12px 20px;border:1px solid #cfc2a7;border-radius:999px;background:rgba(255,253,247,.9);color:#62482f;font-size:14px;font-weight:700;line-height:1.2;text-decoration:none;transition:background .18s,border-color .18s,color .18s}
+.project-more .quiet-link:hover,.experience-section.section-frame .resume-link:hover{border-color:#493426;background:#493426;color:#fffdf7}
+.project-more .quiet-link:focus-visible,.experience-section.section-frame .resume-link:focus-visible{outline:2px solid #493426;outline-offset:3px}
