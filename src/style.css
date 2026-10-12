@@ -477,3 +477,6 @@ footer{color:#725947}
 
 /* Center the resume action beneath the experience timeline. */
 .experience-section.section-frame .resume-link{display:flex;width:max-content;margin:30px auto 0!important}
+
+/* Center the resume action in its grid row. */
+.experience-section.section-frame .resume-link{grid-column:1/-1!important;justify-self:center!important;margin:30px auto 0!important}
